@@ -1,0 +1,8 @@
+Waveform4 is for Alu with name ALU
+Waveform5 is for 4x1 mux with name ALU
+Waveform6 is for source with name ALU
+Waveform7 is for not with name ALU
+Waveform8 is for destination with name ALU
+Waveform9 is for decoding circuit with name ALU
+Waveform10 is for EuBlockDigram with name ALU
+Waveform11 is for EU with name ALU

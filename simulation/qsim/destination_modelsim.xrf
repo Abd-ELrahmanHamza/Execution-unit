@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Lenovo/OneDrive/Desktop/ALU/destination.bdf
+source_file = 1, C:/Users/Lenovo/OneDrive/Desktop/ALU/db/destination.cbx.xml
+design_name = destination
+instance = comp, \sa~output , sa~output, destination, 1
+instance = comp, \sb~output , sb~output, destination, 1
+instance = comp, \sc~output , sc~output, destination, 1
+instance = comp, \s[0]~input , s[0]~input, destination, 1
+instance = comp, \s[1]~input , s[1]~input, destination, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, destination, 1

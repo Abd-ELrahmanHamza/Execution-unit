@@ -1,0 +1,225 @@
+$comment
+	File created using the following command:
+		vcd file DecodingCircuit.msim.vcd -direction
+$end
+$date
+	Sat Oct 30 14:43:01 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module DecodingCircuit_vlg_vec_tst $end
+$var reg 6 ! cmd [5:0] $end
+$var reg 4 " in [3:0] $end
+$var reg 4 # inA [3:0] $end
+$var reg 4 $ inB [3:0] $end
+$var reg 4 % inC [3:0] $end
+$var wire 1 & A [3] $end
+$var wire 1 ' A [2] $end
+$var wire 1 ( A [1] $end
+$var wire 1 ) A [0] $end
+$var wire 1 * B [3] $end
+$var wire 1 + B [2] $end
+$var wire 1 , B [1] $end
+$var wire 1 - B [0] $end
+$var wire 1 . s [1] $end
+$var wire 1 / s [0] $end
+$var wire 1 0 selectA $end
+$var wire 1 1 selectB $end
+$var wire 1 2 selectC $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var tri1 1 6 devclrn $end
+$var tri1 1 7 devpor $end
+$var tri1 1 8 devoe $end
+$var wire 1 9 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 : cmd[1]~input_o $end
+$var wire 1 ; cmd[0]~input_o $end
+$var wire 1 < inst2|inst4~combout $end
+$var wire 1 = inst2|inst5~combout $end
+$var wire 1 > inst2|inst6~combout $end
+$var wire 1 ? in[3]~input_o $end
+$var wire 1 @ inB[3]~input_o $end
+$var wire 1 A inA[3]~input_o $end
+$var wire 1 B inC[3]~input_o $end
+$var wire 1 C cmd[2]~input_o $end
+$var wire 1 D cmd[3]~input_o $end
+$var wire 1 E inst|inst|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~0_combout $end
+$var wire 1 F in[2]~input_o $end
+$var wire 1 G inB[2]~input_o $end
+$var wire 1 H inA[2]~input_o $end
+$var wire 1 I inC[2]~input_o $end
+$var wire 1 J inst|inst|inst2|$00000|auto_generated|l1_w2_n0_mux_dataout~0_combout $end
+$var wire 1 K inB[1]~input_o $end
+$var wire 1 L in[1]~input_o $end
+$var wire 1 M inC[1]~input_o $end
+$var wire 1 N inA[1]~input_o $end
+$var wire 1 O inst|inst|inst2|$00000|auto_generated|l1_w1_n0_mux_dataout~0_combout $end
+$var wire 1 P inC[0]~input_o $end
+$var wire 1 Q in[0]~input_o $end
+$var wire 1 R inB[0]~input_o $end
+$var wire 1 S inA[0]~input_o $end
+$var wire 1 T inst|inst|inst2|$00000|auto_generated|l1_w0_n0_mux_dataout~0_combout $end
+$var wire 1 U inst|inst1|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~0_combout $end
+$var wire 1 V inst|inst1|inst2|$00000|auto_generated|l1_w2_n0_mux_dataout~0_combout $end
+$var wire 1 W inst|inst1|inst2|$00000|auto_generated|l1_w1_n0_mux_dataout~0_combout $end
+$var wire 1 X inst|inst1|inst2|$00000|auto_generated|l1_w0_n0_mux_dataout~0_combout $end
+$var wire 1 Y cmd[5]~input_o $end
+$var wire 1 Z cmd[4]~input_o $end
+$var wire 1 [ inst3~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b1 "
+b11 #
+b111 $
+b1111 %
+1)
+1(
+0'
+0&
+1-
+1,
+0+
+0*
+0/
+0.
+10
+01
+02
+03
+14
+x5
+16
+17
+18
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+1G
+0H
+1I
+0J
+1K
+0L
+1M
+1N
+1O
+1P
+1Q
+1R
+1S
+1T
+0U
+0V
+1W
+1X
+0Y
+0Z
+0[
+$end
+#100000
+b100 !
+b110 !
+1:
+1C
+1<
+1J
+1V
+1U
+1>
+12
+1*
+1+
+1'
+00
+#200000
+b100110 !
+b101110 !
+b101010 !
+b101000 !
+0:
+0C
+1D
+1Y
+1.
+0<
+1E
+0V
+0U
+0>
+02
+0*
+0+
+1&
+10
+#300000
+b111000 !
+b110000 !
+b110010 !
+1:
+0D
+1Z
+1<
+1[
+0J
+0E
+1V
+1U
+1>
+12
+1*
+1+
+0&
+0'
+1/
+00
+#400000
+b10010 !
+b10110 !
+1C
+0Y
+0.
+1J
+0[
+0/
+1'
+#500000
+b110 !
+b100 !
+b0 !
+0:
+0C
+0Z
+0<
+0J
+0V
+0U
+0>
+02
+0*
+0+
+0'
+10
+#1000000

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Lenovo/OneDrive/Desktop/ALU/NotBus.bdf
+source_file = 1, C:/Users/Lenovo/OneDrive/Desktop/ALU/db/NotBus.cbx.xml
+design_name = NotBus
+instance = comp, \out[3]~output , out[3]~output, NotBus, 1
+instance = comp, \out[2]~output , out[2]~output, NotBus, 1
+instance = comp, \out[1]~output , out[1]~output, NotBus, 1
+instance = comp, \out[0]~output , out[0]~output, NotBus, 1
+instance = comp, \in[3]~input , in[3]~input, NotBus, 1
+instance = comp, \in[2]~input , in[2]~input, NotBus, 1
+instance = comp, \in[1]~input , in[1]~input, NotBus, 1
+instance = comp, \in[0]~input , in[0]~input, NotBus, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, NotBus, 1

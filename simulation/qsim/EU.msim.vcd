@@ -1,0 +1,359 @@
+$comment
+	File created using the following command:
+		vcd file EU.msim.vcd -direction
+$end
+$date
+	Mon Nov 15 16:00:50 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module EU_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 10 " command [9:0] $end
+$var wire 1 # out [3] $end
+$var wire 1 $ out [2] $end
+$var wire 1 % out [1] $end
+$var wire 1 & out [0] $end
+$var wire 1 ' RegA [3] $end
+$var wire 1 ( RegA [2] $end
+$var wire 1 ) RegA [1] $end
+$var wire 1 * RegA [0] $end
+$var wire 1 + RegB [3] $end
+$var wire 1 , RegB [2] $end
+$var wire 1 - RegB [1] $end
+$var wire 1 . RegB [0] $end
+$var wire 1 / RegC [3] $end
+$var wire 1 0 RegC [2] $end
+$var wire 1 1 RegC [1] $end
+$var wire 1 2 RegC [0] $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var tri1 1 6 devclrn $end
+$var tri1 1 7 devpor $end
+$var tri1 1 8 devoe $end
+$var wire 1 9 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 : command[8]~input_o $end
+$var wire 1 ; command[9]~input_o $end
+$var wire 1 < command[6]~input_o $end
+$var wire 1 = command[7]~input_o $end
+$var wire 1 > clk~input_o $end
+$var wire 1 ? clk~inputCLKENA0_outclk $end
+$var wire 1 @ command[4]~input_o $end
+$var wire 1 A command[5]~input_o $end
+$var wire 1 B inst|inst|inst2|inst4~combout $end
+$var wire 1 C inst|Areg|inst~q $end
+$var wire 1 D inst|inst|inst2|inst6~combout $end
+$var wire 1 E inst|Creg|inst~q $end
+$var wire 1 F command[3]~input_o $end
+$var wire 1 G inst|inst|inst2|inst5~combout $end
+$var wire 1 H inst|Breg|inst~q $end
+$var wire 1 I inst|inst|inst|inst|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~0_combout $end
+$var wire 1 J inst|inst|inst|inst1|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~0_combout $end
+$var wire 1 K command[2]~input_o $end
+$var wire 1 L inst|Creg|inst1~q $end
+$var wire 1 M inst|Areg|inst1~q $end
+$var wire 1 N inst|inst|inst|inst1|inst2|$00000|auto_generated|l1_w2_n0_mux_dataout~0_combout $end
+$var wire 1 O command[0]~input_o $end
+$var wire 1 P inst|Creg|inst3~q $end
+$var wire 1 Q inst|Breg|inst3~q $end
+$var wire 1 R inst|inst|inst|inst|inst2|$00000|auto_generated|l1_w0_n0_mux_dataout~0_combout $end
+$var wire 1 S inst|inst2|inst2|$00000|auto_generated|l1_w0_n0_mux_dataout~0_combout $end
+$var wire 1 T inst|Areg|inst3~q $end
+$var wire 1 U inst|inst|inst|inst1|inst2|$00000|auto_generated|l1_w0_n0_mux_dataout~0_combout $end
+$var wire 1 V command[1]~input_o $end
+$var wire 1 W inst|Creg|inst2~q $end
+$var wire 1 X inst|Areg|inst2~q $end
+$var wire 1 Y inst|inst|inst|inst1|inst2|$00000|auto_generated|l1_w1_n0_mux_dataout~0_combout $end
+$var wire 1 Z inst|inst2|inst2|$00000|auto_generated|l1_w1_n0_mux_dataout~0_combout $end
+$var wire 1 [ inst|Breg|inst2~q $end
+$var wire 1 \ inst|inst|inst|inst|inst2|$00000|auto_generated|l1_w1_n0_mux_dataout~0_combout $end
+$var wire 1 ] inst|inst2|inst5|inst1|inst4~combout $end
+$var wire 1 ^ inst|inst2|inst2|$00000|auto_generated|l1_w2_n0_mux_dataout~0_combout $end
+$var wire 1 _ inst|Breg|inst1~q $end
+$var wire 1 ` inst|inst|inst|inst|inst2|$00000|auto_generated|l1_w2_n0_mux_dataout~0_combout $end
+$var wire 1 a inst|inst2|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~0_combout $end
+$var wire 1 b inst|inst2|inst2|$00000|auto_generated|l1_w3_n0_mux_dataout~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+b11000001 "
+1&
+0%
+0$
+0#
+0*
+0)
+0(
+0'
+0.
+0-
+0,
+0+
+02
+01
+00
+0/
+03
+14
+x5
+16
+17
+18
+09
+0:
+0;
+1<
+1=
+1>
+1?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+1O
+0P
+0Q
+1R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+$end
+#50000
+0!
+0>
+0?
+#100000
+b11010001 "
+b11010011 "
+b11010010 "
+1!
+0O
+1V
+1@
+1>
+1?
+1G
+0B
+1\
+0R
+1Z
+0S
+0&
+1%
+1T
+1*
+#150000
+0!
+0>
+0?
+#200000
+b11110010 "
+b11110110 "
+b11100110 "
+b11100100 "
+1!
+0V
+1K
+0@
+1A
+1>
+1?
+0G
+1D
+1`
+0\
+0Z
+1^
+1$
+0%
+1[
+1-
+#250000
+0!
+0>
+0?
+#300000
+b1011100100 "
+b1001100100 "
+b1000100100 "
+b1000000100 "
+b1000000000 "
+b1000010000 "
+1!
+0K
+1@
+0A
+0<
+0=
+1;
+1>
+1?
+0`
+1R
+1Y
+1G
+0D
+1Z
+1S
+0^
+0$
+1&
+1%
+1L
+10
+#350000
+0!
+0>
+0?
+#400000
+b1001010000 "
+b1001110000 "
+b1001100000 "
+1!
+0@
+1A
+1<
+1>
+1?
+1\
+0R
+0Y
+1N
+0G
+1D
+1^
+0S
+0&
+1$
+1Q
+1.
+1R
+1S
+1&
+#450000
+0!
+0>
+0?
+#500000
+b1101100000 "
+1!
+1:
+1>
+1?
+0^
+0Z
+0S
+0&
+0%
+0$
+1W
+1P
+12
+11
+1U
+1Y
+1a
+1]
+1Z
+1S
+1&
+1%
+#550000
+0!
+0>
+0?
+#600000
+b101100000 "
+b100100000 "
+b100000000 "
+b100010000 "
+b10000 "
+1!
+1@
+0A
+0<
+0:
+0;
+1>
+1?
+0\
+0N
+1G
+0D
+0a
+0Z
+0%
+0L
+00
+#650000
+0!
+0>
+0?
+#700000
+b0 "
+1!
+0@
+1>
+1?
+0Y
+0G
+1B
+0]
+0[
+0-
+#750000
+0!
+0>
+0?
+#800000
+1!
+1>
+1?
+#850000
+0!
+0>
+0?
+#900000
+1!
+1>
+1?
+#950000
+0!
+0>
+0?
+#1000000

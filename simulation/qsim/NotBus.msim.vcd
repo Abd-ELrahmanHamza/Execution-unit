@@ -1,0 +1,98 @@
+$comment
+	File created using the following command:
+		vcd file NotBus.msim.vcd -direction
+$end
+$date
+	Sat Oct 30 13:37:53 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module NotBus_vlg_vec_tst $end
+$var reg 4 ! in [3:0] $end
+$var wire 1 " out [3] $end
+$var wire 1 # out [2] $end
+$var wire 1 $ out [1] $end
+$var wire 1 % out [0] $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 - in[3]~input_o $end
+$var wire 1 . in[2]~input_o $end
+$var wire 1 / in[1]~input_o $end
+$var wire 1 0 in[0]~input_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 !
+0%
+1$
+0#
+1"
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+1.
+0/
+10
+$end
+#100000
+b1101 !
+b1111 !
+1/
+1-
+0"
+0$
+#200000
+b1101 !
+0/
+1$
+#300000
+b1001 !
+b1 !
+0.
+0-
+1"
+1#
+#400000
+b0 !
+b100 !
+00
+1.
+0#
+1%
+#500000
+b110 !
+b1110 !
+b1010 !
+1/
+0.
+1-
+0"
+1#
+0$
+#600000
+b1000 !
+b0 !
+0/
+0-
+1"
+1$
+#1000000

@@ -1,0 +1,59 @@
+|adder
+out[0] <= fulladder:inst.sum
+out[1] <= fulladder:inst1.sum
+out[2] <= fulladder:inst2.sum
+out[3] <= fulladder:inst3.sum
+a[0] => fulladder:inst.a
+a[1] => fulladder:inst1.a
+a[2] => fulladder:inst2.a
+a[3] => fulladder:inst3.a
+b[0] => fulladder:inst.b
+b[1] => fulladder:inst1.b
+b[2] => fulladder:inst2.b
+b[3] => fulladder:inst3.b
+
+
+|adder|fulladder:inst2
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|fulladder:inst1
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|fulladder:inst
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|fulladder:inst3
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

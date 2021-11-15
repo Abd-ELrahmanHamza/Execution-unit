@@ -1,0 +1,299 @@
+|finalALU
+out[0] <= ALU:inst.out[0]
+out[1] <= ALU:inst.out[1]
+out[2] <= ALU:inst.out[2]
+out[3] <= ALU:inst.out[3]
+a[0] => ALU:inst.a[0]
+a[1] => ALU:inst.a[1]
+a[2] => ALU:inst.a[2]
+a[3] => ALU:inst.a[3]
+b[0] => ALU:inst.b[0]
+b[1] => ALU:inst.b[1]
+b[2] => ALU:inst.b[2]
+b[3] => ALU:inst.b[3]
+s[0] => ALU:inst.s[0]
+s[1] => ALU:inst.s[1]
+
+
+|finalALU|ALU:inst
+out[0] <= BUSMUX:inst2.result[0]
+out[1] <= BUSMUX:inst2.result[1]
+out[2] <= BUSMUX:inst2.result[2]
+out[3] <= BUSMUX:inst2.result[3]
+s[0] => BUSMUX:inst.sel
+s[0] => BUSMUX:inst1.sel
+s[1] => BUSMUX:inst2.sel
+a[0] => BUSMUX:inst.dataa[0]
+a[0] => adder:inst5.a[0]
+a[0] => fourbitwiseAnd:inst4.a[0]
+a[1] => BUSMUX:inst.dataa[1]
+a[1] => adder:inst5.a[1]
+a[1] => fourbitwiseAnd:inst4.a[1]
+a[2] => BUSMUX:inst.dataa[2]
+a[2] => adder:inst5.a[2]
+a[2] => fourbitwiseAnd:inst4.a[2]
+a[3] => BUSMUX:inst.dataa[3]
+a[3] => adder:inst5.a[3]
+a[3] => fourbitwiseAnd:inst4.a[3]
+b[0] => BUSMUX:inst.datab[0]
+b[0] => adder:inst5.b[0]
+b[0] => fourbitwiseAnd:inst4.b[0]
+b[1] => BUSMUX:inst.datab[1]
+b[1] => adder:inst5.b[1]
+b[1] => fourbitwiseAnd:inst4.b[1]
+b[2] => BUSMUX:inst.datab[2]
+b[2] => adder:inst5.b[2]
+b[2] => fourbitwiseAnd:inst4.b[2]
+b[3] => BUSMUX:inst.datab[3]
+b[3] => adder:inst5.b[3]
+b[3] => fourbitwiseAnd:inst4.b[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst2
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst2|lpm_mux:$00000
+data[0][0] => mux_sjc:auto_generated.data[0]
+data[0][1] => mux_sjc:auto_generated.data[1]
+data[0][2] => mux_sjc:auto_generated.data[2]
+data[0][3] => mux_sjc:auto_generated.data[3]
+data[1][0] => mux_sjc:auto_generated.data[4]
+data[1][1] => mux_sjc:auto_generated.data[5]
+data[1][2] => mux_sjc:auto_generated.data[6]
+data[1][3] => mux_sjc:auto_generated.data[7]
+sel[0] => mux_sjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_sjc:auto_generated.result[0]
+result[1] <= mux_sjc:auto_generated.result[1]
+result[2] <= mux_sjc:auto_generated.result[2]
+result[3] <= mux_sjc:auto_generated.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst2|lpm_mux:$00000|mux_sjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w1_n0_mux_dataout.IN1
+data[2] => l1_w2_n0_mux_dataout.IN1
+data[3] => l1_w3_n0_mux_dataout.IN1
+data[4] => l1_w0_n0_mux_dataout.IN1
+data[5] => l1_w1_n0_mux_dataout.IN1
+data[6] => l1_w2_n0_mux_dataout.IN1
+data[7] => l1_w3_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w1_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w2_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w3_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
+|finalALU|ALU:inst|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_sjc:auto_generated.data[0]
+data[0][1] => mux_sjc:auto_generated.data[1]
+data[0][2] => mux_sjc:auto_generated.data[2]
+data[0][3] => mux_sjc:auto_generated.data[3]
+data[1][0] => mux_sjc:auto_generated.data[4]
+data[1][1] => mux_sjc:auto_generated.data[5]
+data[1][2] => mux_sjc:auto_generated.data[6]
+data[1][3] => mux_sjc:auto_generated.data[7]
+sel[0] => mux_sjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_sjc:auto_generated.result[0]
+result[1] <= mux_sjc:auto_generated.result[1]
+result[2] <= mux_sjc:auto_generated.result[2]
+result[3] <= mux_sjc:auto_generated.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst|lpm_mux:$00000|mux_sjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w1_n0_mux_dataout.IN1
+data[2] => l1_w2_n0_mux_dataout.IN1
+data[3] => l1_w3_n0_mux_dataout.IN1
+data[4] => l1_w0_n0_mux_dataout.IN1
+data[5] => l1_w1_n0_mux_dataout.IN1
+data[6] => l1_w2_n0_mux_dataout.IN1
+data[7] => l1_w3_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w1_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w2_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w3_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
+|finalALU|ALU:inst|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_sjc:auto_generated.data[0]
+data[0][1] => mux_sjc:auto_generated.data[1]
+data[0][2] => mux_sjc:auto_generated.data[2]
+data[0][3] => mux_sjc:auto_generated.data[3]
+data[1][0] => mux_sjc:auto_generated.data[4]
+data[1][1] => mux_sjc:auto_generated.data[5]
+data[1][2] => mux_sjc:auto_generated.data[6]
+data[1][3] => mux_sjc:auto_generated.data[7]
+sel[0] => mux_sjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_sjc:auto_generated.result[0]
+result[1] <= mux_sjc:auto_generated.result[1]
+result[2] <= mux_sjc:auto_generated.result[2]
+result[3] <= mux_sjc:auto_generated.result[3]
+
+
+|finalALU|ALU:inst|BUSMUX:inst1|lpm_mux:$00000|mux_sjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w1_n0_mux_dataout.IN1
+data[2] => l1_w2_n0_mux_dataout.IN1
+data[3] => l1_w3_n0_mux_dataout.IN1
+data[4] => l1_w0_n0_mux_dataout.IN1
+data[5] => l1_w1_n0_mux_dataout.IN1
+data[6] => l1_w2_n0_mux_dataout.IN1
+data[7] => l1_w3_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w1_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w2_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w3_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
+|finalALU|ALU:inst|adder:inst5
+out[0] <= fulladder:inst.sum
+out[1] <= fulladder:inst1.sum
+out[2] <= fulladder:inst2.sum
+out[3] <= fulladder:inst3.sum
+a[0] => fulladder:inst.a
+a[1] => fulladder:inst1.a
+a[2] => fulladder:inst2.a
+a[3] => fulladder:inst3.a
+b[0] => fulladder:inst.b
+b[1] => fulladder:inst1.b
+b[2] => fulladder:inst2.b
+b[3] => fulladder:inst3.b
+
+
+|finalALU|ALU:inst|adder:inst5|fulladder:inst2
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|finalALU|ALU:inst|adder:inst5|fulladder:inst1
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|finalALU|ALU:inst|adder:inst5|fulladder:inst
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|finalALU|ALU:inst|adder:inst5|fulladder:inst3
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN1
+b => inst.IN1
+b => inst3.IN0
+cin => inst1.IN1
+cin => inst2.IN1
+cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|finalALU|ALU:inst|fourbitwiseAnd:inst4
+out[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst3.IN0
+a[1] => inst2.IN0
+a[2] => inst1.IN0
+a[3] => inst.IN0
+b[0] => inst3.IN1
+b[1] => inst2.IN1
+b[2] => inst1.IN1
+b[3] => inst.IN1
+
+
